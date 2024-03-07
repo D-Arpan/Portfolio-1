@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 25px 10%;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+}
+
+.leftnav {
+    font-size: 76px;
+    font-weight: 600;
+    color: rgb(124, 124, 124);
+    transition: 0.4s ease;
+}
+
+.leftnav:hover {
+    transform: scale(1.1);
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.navlist li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5PX;
+    transition: 0.4s;
+}
+
+.navlist li a:hover::after {
+    width: 100%;
+}
+
+#home {
+    height: 115vh;
+    display: flex;
+    padding: 8%;
+    justify-content: space-between;
+
+}
+
+.leftcontainer {
+    align-items: center;
+    width: 50%;
+}
+
+.rightcontainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.midcontainer {
+    width: 10%;
+}
+
+.leftcontainer,
+.rightcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding-right: 5rem;
+}
+
+.fa-brands {
+    transition: 0.4s ease;
+}
+
+.fa-brands:hover {
+    transform: scale(1.3);
+}
+
+.fa-solid {
+    transition: 0.4s ease;
+}
+
+.fa-solid:hover {
+    transform: scale(1.3);
+}
+
+.icons .fa-brands,
+.icons .fa-solid {
+    color: yellow;
+    font-size: 2.4rem;
+}
+
+.textbox .intro {
+    font-size: 2rem;
+}
+
+.textbox .intro span {
+    color: yellow;
+}
+
+span {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+span:hover {
+    transform: scale(1.03);
+}
+
+.textbox .title {
+    font-size: 3rem;
+    color: rgb(214, 214, 70);
+}
+
+.textbox .details {
+    line height: 3rem;
+}
+
+.title {
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.title:hover {
+    transform: scale(1.03);
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+}
+
+.bgcircle {
+    width: 450px;
+    height: 450px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.bgcircle img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
